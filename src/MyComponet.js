@@ -2,7 +2,7 @@ import React, { Component } from 'react'
  
 class MyComponent extends Component {
  render(){
-   return (<div>This is my first component</div>)
+ return (<div>My name is {this.props.name}</div>)
  }
 }
  
