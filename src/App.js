@@ -3,6 +3,7 @@
 import React, {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
+import ContadorComponent from './componentes/Contador.js'
 
 const App = () => {
     //const [name, setName]=useState('edith')
@@ -17,18 +18,15 @@ const App = () => {
 
     }
 
+    const name='Edith'
     return (
         <div className="App">
             <div className="App-header">
                 <img src={logo} 
                 className="App-logo"></img>
-                <button onClick={sumar}>
-                    +
-                </button>
-                <div>{contador}</div>
-                <button onClick={restar}>
-                    -
-                </button>
+                <ContadorComponent nameA={name}/>
+
+                
 
             </div>
         
